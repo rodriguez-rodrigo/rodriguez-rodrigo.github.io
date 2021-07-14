@@ -74,7 +74,7 @@ const COMPONENTS = {
 }
 
 const onLoad = () => {
-    renderArticles();
+    // renderArticles();
 }
 
 const renderArticles = () => {
