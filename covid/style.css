@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "rubik";
+    src: url("./fonts/Rubik/static/Rubik-Regular.ttf");
+}
+
+* {
+    font-family: "rubik", serif;
+    color: white;
+    box-sizing: content-box;
+}
+button{
+    background-color: black;
+    border:0px;
+    padding: 3px;
+}
+p{
+    margin: 0;
+}
+table, th, td{ border: 1px solid #3B9E8A}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    background-color: #4DA994;
+    padding: 0.75rem;
+}
+td{
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.75rem;
+}
+.title{
+    font-size: 8px;
+}
+.value{
+    font-weight: bold;
+    font-size: 14px;
+}
+.card{
+    background-color: #5EAB98;
+    border-radius: 50px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.card1{
+    padding: 1.5rem 3rem 1rem 3rem;
+    width: 500px;
+}
+.card2{
+    padding: 2rem 0 0.5rem 0;
+    width: 596px;
+}
+.wrapper{
+    height: 60px;
+    background-color: #4DA994;
+}
+#name{
+    text-transform: uppercase;
+}
+#background-image{
+    position: absolute;
+    top: 0;
+    right: -170px;
+    width: 400px;
+    height: 400px;
+    background-image: url("./img/logovacunacionmini.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+.pass{
+    background-color: white;
+    text-align: center;
+    color: #15573B;
+    margin-top: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    border: 2px solid #15573B;
+    white-space: nowrap;
+}
+#qr-code1{
+    background-color: white;
+    padding: 1rem;
+}
+
+#qr-code2-container{
+    margin: 3rem auto 0 auto;
+    width: 600px;
+}
+
+.line{
+    border: 1px solid white;
+    background-color: white;
+}
+.text-center{text-align: center;}
+
+/* flex */
+
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+/* margin padding */
+.my-4{ margin-top: 1.5rem; margin-bottom: 1.5rem;}
+.mt-3{ margin-top: 1rem;}
+.mt-4{ margin-top: 1.5rem;}
+.mt-5{ margin-top: 3rem;}
+
+.pl-1 { padding-left: 0.25rem;}
+.pr-1 { padding-right: 0.25rem;}
+.pl-2 { padding-left: 0.5rem;}
+.pr-2 { padding-right: 0.5rem;}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

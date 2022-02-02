@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Nombre</label>
+    <input id="name" type="text">
+    <small>Formato: Apellido, Nombres</small><br/>
+    <label for="id">DNI</label>
+    <input id="id" type="text"><br/>
+    <label for="cuil">CUIL</label>
+    <input id="cuil" type="text">
+    <small>Formato: 00-00000000-0</small><br/>
+    <button onclick="generar()">Generar</button>
+
+    <script>
+        function generar(){
+            const name = document.querySelector('#name').value;
+            const id = document.querySelector('#id').value;
+            const cuil = document.querySelector('#cuil').value;
+            window.location.href = `./pdf.html?name=${name}&id=${id}&cuil=${cuil}`;
+        }
+    </script>
+</body>
+</html>
