@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <label for="name">Nombre</label>
-    <input id="name" type="text">
-    <small>Formato: Apellido, Nombres</small><br/>
-    <label for="id">DNI</label>
-    <input id="id" type="text"><br/>
-    <label for="cuil">CUIL</label>
-    <input id="cuil" type="text">
-    <small>Formato: 00-00000000-0</small><br/>
-    <button onclick="generar()">Generar</button>
 
-    <script>
-        function generar(){
-            const name = document.querySelector('#name').value;
-            const id = document.querySelector('#id').value;
-            const cuil = document.querySelector('#cuil').value;
-            window.location.href = `./pdf.html?name=${name}&id=${id}&cuil=${cuil}`;
+    <style>
+        .container{
+            width: 90%;
+            max-width: 500px;
+            height: 50vh;
+            margin: 0 auto;
         }
-    </script>
+        input{
+            width: 100%;
+            padding: 5px;
+        }
+        button{
+            width: 50%;
+            padding: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div style="margin-top: 1rem;">
+            <label for="name">Nombre</label>
+            <input id="name" type="text">
+            <small>Formato: Apellido, Nombres</small>
+        </div>
+        <div style="margin-top: 1rem;">
+
+            <label for="id">DNI</label>
+            <input id="id" type="text">
+        </div>
+        <div style="margin-top: 1rem;">
+            <label for="cuil">CUIL</label>
+            <input id="cuil" type="text">
+            <small>Formato: 00-00000000-0</small>
+        </div>
+        <div style="margin-top: 1rem; text-align: center;">
+            <button onclick="generar()">Generar</button>
+        </div>
+        <script>
+            function generar() {
+                const name = document.querySelector('#name').value;
+                const id = document.querySelector('#id').value;
+                const cuil = document.querySelector('#cuil').value;
+                window.location.href = `./pdf.html?name=${name}&id=${id}&cuil=${cuil}`;
+            }
+        </script>
 </body>
+
 </html>
