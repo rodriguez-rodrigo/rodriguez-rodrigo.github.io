@@ -39,6 +39,13 @@ npm run dev
 
 ```sh
 npm run build
+
+## GitHub Pages
+
+This project is configured to deploy via GitHub Actions to GitHub Pages.
+
+1. Push to the `main` branch.
+2. In GitHub, go to Settings -> Pages and set Source to GitHub Actions.
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
